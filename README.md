@@ -18,6 +18,8 @@ _A list of my commonly used Git commands_
 | ------- | ----------- |
 | `git init` | Initialize a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
+| `git remote add origin git@github.com/[username]/[repository-name].git` | Connect to repo after git init |
+| `git remote -v` | Check connected repo |
 
 ### Basic Snapshotting
 
@@ -48,6 +50,17 @@ _A list of my commonly used Git commands_
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash clear` | Remove all stashed entries |
+
+### Corrections
+
+| Command | Description |
+| ------- | ----------- |
+| `git reset` | Reset the last "git add" |
+| `git reset [file name]` | Reset [file name] from the last "git add" |
+| `git reset HEAD~1` | Reset the last "git" (i.e. commit) and go 1 step back |
+| `git log` | Find breakpoints by codename |
+| `git reset [breakpoint codename]` | Reset to the breakpoint |
+| `git reset --hard [file name/ HEAD~x/breakpoint codename]` | Reset the last "git" and update files |
 
 ### Sharing & Updating Projects
 
